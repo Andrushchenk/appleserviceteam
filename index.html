@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<link rel="icon" type="image/x-icon" href="img/Icon/apple.ico">
+	<link rel="stylesheet" href="style.css">
+	<title>AppleServiceTeam</title>
+	
+</head>
+<body>
+
+<!-- LOADER -->
+<div class="mask">
+	<!-- ОСНОВНИЙ БЛОК ЛОАДЕРА -->
+	<div class="loader">
+		<!-- КАРТИНКА -->
+		<img class="imgLoader" src="/img/loader/apple4.png">
+		<!-- КАРТИНКА -->
+		<!-- БЛОК ІЗ ТЕКСТОМ -->
+		<div class="textLoader">
+				AppleServiceTeam
+		</div>
+		<!-- БЛОК ІЗ ТЕКСТОМ -->
+	</div>
+	<!-- ОСНОВНИЙ БЛОК ЛОАДЕРА -->
+</div>
+<!-- LOADER -->
+
+
+<!-- MAIN ПОЧАТОК -->
+<div class="container-main" id="main">
+	<!-- ЛОГОТИП -->
+	<div class="logo" >
+		<img class="logo-main" src="/img/main/apple4.png">
+	</div>
+	<!-- ЛОГОТИП -->
+	<!-- НАВІГАЦІЯ -->
+	<div class="header" >
+	<div class="navigation" id="navigation">
+		<nav class="nav" >
+			<div class="links" >
+			<a href="#" class="a__links active"  data-scroll="#main">Головна</a>
+			<a href="#" class="a__links" data-scroll="#form"> Форма заявки</a>
+			<a href="#" class="a__links" data-scroll="#team">Наша команда</a>
+			<a href="#" class="a__links" data-scroll="#contacts">Місце знаходження</a>
+		</div>
+		</nav>
+	</div>
+</div>
+	<!-- НАВІГАЦІЯ -->
+	<!-- БЛОК ІЗ ІНФОРМАЦІЄЮ -->
+	<div class="main-info"  id="nav"  >
+		<!-- БЛОК ІЗ ТЕКСТОМ -->
+		<div class="main-text">
+			<p class="text-info">
+				Ласкаво просимо на наш сайт, вашого надійного партнера у світі ремонту техніки Apple!
+				<br><br>
+				Ми - команда фахівців, спеціалізуючихся на відновленні та обслуговуванні продукції Apple.
+ 				Незалежно від того, чи стикаєтеся ви з проблемами вашого iPhone, iPad, MacBook чи іншого пристрою від Apple,
+  			ми тут, щоб надати вам видатний сервіс та повернути вашій техніці життя.
+				<br><br>
+				Наші висококваліфіковані техніки мають багатий досвід у ремонті пристроїв Apple, використовуючи 
+				лише оригінальні комплектуючі та передові технології. Ми пишаємося своєю
+				ефективністю, точністю та швидкістю вирішення проблем.
+				<br><br>
+				Разом з нами ви можете бути впевнені, що ваша техніка 
+				знаходиться в надійних руках. Ми надаємо повний спектр послуг - від заміни екранів та акумуляторів 
+				до діагностики та вирішення програмних проблем.
+			</p>
+		</div>
+		<!-- БЛОК ІЗ ТЕКСТОМ -->
+		<!-- БЛОК ІЗ КАРТИНКАМИ -->
+		<div class="main-img">
+			<img class="img-iphone" src="/img/main/iphone1.png">
+			<img class="img-ipad" src="/img/main/ipad.png">
+			<img class="img-macbook" src="/img/main/macbook.png">
+		</div>
+		<!-- БЛОК ІЗ КАРТИНКАМИ -->
+	</div>
+	<!-- БЛОК ІЗ ІНФОРМАЦІЄЮ -->
+</div>
+<!-- MAIN КІНЕЦЬ -->
+
+
+<!-- КОНТЕЙРНЕР ФОРМА ПОЧАТОК -->
+<div class="container-forma" id="form">
+	<!-- ВНУТРШНІЙ КОНТЕЙНЕР ФОРМА -->
+	<div class="forma">
+		<!-- ЗАГОЛОВОК ФОРМИ -->
+		<div class="tex-forma">Заповніть форму, і ми із вами зв’яжемось!</div>
+			<!-- ЗАГОЛОВОК ФОРМИ -->
+		<!-- <div class="main-form"> -->
+			<!-- ОСНОВНА ФОРМА -->
+			<form action="mail.php" method="POST" class="main-form">
+			
+			<!-- <input type="hidden" class="name-form" name="project_name" value="AppleServiceTeam" >
+			<input type="hidden" class="email-form" name="admin_email" value="yuraandrushenk@gmail.com" >
+			<input type="hidden" class="phone-form" name="form_subject" value="Form Subject" > -->
+		
+			<input type="text" class="name-form" name="user_name" placeholder="Як до Вас звертатися?" required>
+			<input type="text" class="email-form" name="user_email" placeholder="Ваша почта" required>
+			<input type="text" class="phone-form" name="user_phone" placeholder="Номер телефона" required>
+			<!-- <input type="text" class="description-form" name="Description" placeholder="Опишіть Вашу проблему" required> -->
+			<textarea class="textarea"  name="Description" placeholder="Опишіть Вашу проблему"></textarea>
+			<input type="submit" class="button-form" value="Відправити">
+		</form>
+		<!-- ОСНОВНА ФОРМА -->
+		<!-- </div> -->
+		<!-- <button class="button-form">Відправити</button> -->
+		<input type="submit" class="button-form" value="Відправити">
+	</div>
+		<!-- ВНУТРШНІЙ КОНТЕЙНЕР ФОРМА -->
+</div>
+<!-- КОНТЕЙРНЕР ФОРМА КІНЕЦЬ -->
+
+
+<!-- КОНТЕЙНЕР КОМАНДА -->
+<div class="contaire-team" id="team">
+	<!-- ОСНОВНИЙ КОНТЕЙНЕР КОМАНДИ -->
+	<div class="team">
+		<!-- КОНТЕЙНЕР ДИРЕКТОРА -->
+		<div class="person">
+			<div class="img-person1"></div>
+			<p class="name-person">Андрущенко Юрій</p>
+			<p class="job-title">Директор</p>
+		</div>
+				<!-- КОНТЕЙНЕР ДИРЕКТОРА -->
+				<!-- КОНТЕЙНЕР СПЕЦІАЛІСТА -->
+		<div class="person">
+			<div class="img-person2"></div>
+			<p class="name-person">Маляр Дмитро</p>
+			<p class="job-title">Спеціаліст по ремонту</p>
+		</div>
+			<!-- КОНТЕЙНЕР СПЕЦІАЛІСТА -->
+			<!-- КОНТЕЙНЕР МЕНЕДЖЕРА -->
+		<div class="person">
+			<div class="img-person3"></div>
+			<p class="name-person">Жураківська Ірина</p>
+			<p class="job-title">Старший менеджер</p>
+		</div>
+		<!-- КОНТЕЙНЕР МЕНЕДЖЕРА -->
+		<!-- КОНТЕЙНЕР ДРУГОГО СПЕЦІАЛІСТА -->
+		<div class="person">
+			<div class="img-person4"></div>
+			<p class="name-person">Іванченко Марта</p>
+			<p class="job-title">Спеціаліст по ремонту</p>
+		</div>
+			<!-- КОНТЕЙНЕР ДРУГОГО СПЕЦІАЛІСТА -->
+			<!-- КОНТЕЙНЕР ГОЛОВИ ПЕРСОНАЛУ -->
+		<div class="person">
+			<div class="img-person5"></div>
+			<p class="name-person">Войтюк Валентина</p>
+			<p class="job-title">Голова персоналу</p>
+		</div>
+		<!-- КОНТЕЙНЕР ГОЛОВИ ПЕРСОНАЛУ -->
+		<!-- КОНТЕЙНЕР БУХГАЛТЕРА -->
+		<div class="person">
+			<div class="img-person6"></div>
+			<p class="name-person">Григоренко Світлана</p>
+			<p class="job-title">Бухгалтер</p>
+		</div>
+	</div>
+	<!-- КОНТЕЙНЕР БУХГАЛТЕРА -->
+		<!-- ОСНОВНИЙ КОНТЕЙНЕР КОМАНДИ -->
+</div>
+<!-- КОНТЕЙНЕР КОМАНДА -->
+
+
+<!-- КОНТЕЙНЕР МАПИ -->
+<div class="container-maps" id="contacts">
+	<!-- ОСНОВНИЙ КОНТЕЙНЕР МАПИ -->
+	<div class="maps">
+		<iframe class="google-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.6050380165175!2d30.47423071268785!3d50.42982998872904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cec08ab9a4c5%3A0xbef24c583ddac08a!2zN0EsINGD0LsuINCh0L7Qu9C-0LzQtdC90YHQutCw0Y8sIDfQkCwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1701698966310!5m2!1sru!2sua"
+		 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>
+		<!-- ОСНОВНИЙ КОНТЕЙНЕР МАПИ -->
+		<!-- КОНТЕЙНЕР ІНФО -->
+	<div class="footer">
+		<div class="adresa footer-text">Адреса<br>
+			Київ, Соломянська 24 </div>
+		<div class="telefon footer-text">Телефон<br>+380680066513</div>
+		<div class="grafik footer-text">
+			Графік <br>Понеділок-П’ятниця 8-17</div>
+	</div>
+		<!-- КОНТЕЙНЕР ІНФО -->
+</div>
+<!-- КОНТЕЙНЕР МАПИ -->
+
+
+<!-- ПІДКЛЮЧЕННЯ JS -->
+<script src="app.js"></script>
+<!-- ПІДКЛЮЧЕННЯ JS -->
+ <!-- Bootstrap core JavaScript ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+</body>
+</html>

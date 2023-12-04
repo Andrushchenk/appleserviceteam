@@ -1,0 +1,698 @@
+
+/* Підключення шрифтів */
+@font-face {
+	font-family: 'Mazzard Soft H';
+	src: url('Fonts/MazzardSoftH-Thin.otf');
+	font-weight: 100;
+	font-style: normal;
+ }
+
+@font-face {
+	font-family: 'Mazzard Soft H';
+	src: url('Fonts//MazzardSoftH-ExtraLight.otf');
+	font-weight: 200;
+	font-style: normal;
+ }
+
+@font-face {
+	font-family: 'Mazzard Soft H';
+	src: url('Fonts/MazzardSoftH-Light.otf');
+	font-weight: 300;
+	font-style: normal;
+ }
+
+@font-face {
+	font-family: 'Mazzard Soft H';
+	src: url('Fonts/MazzardSoftH-Regular.otf');
+	font-weight: 400;
+	font-style: normal;
+ }
+
+@font-face {
+	font-family: 'Mazzard Soft H';
+	src: url('Fonts/MazzardSoftH-Medium.otf');
+	font-weight: 500;
+	font-style: normal;
+ }
+
+@font-face {
+	font-family: 'Mazzard Soft H';
+	src: url('Fonts/MazzardSoftH-SemiBold.otf');
+	font-weight: 600;
+	font-style: normal;
+ }
+
+@font-face {
+	font-family: 'Mazzard Soft H';
+	src: url('Fonts/MazzardSoftH-Bold.otf');
+	font-weight: 700;
+	font-style: normal;
+ }
+
+@font-face {
+	font-family: 'Mazzard Soft H';
+	src: url('Fonts/MazzardSoftH-Black.otf');
+	font-weight: 800;
+	font-style: normal;
+ }
+
+@font-face {
+	font-family: 'Mazzard Soft H';
+	src: url('Fonts/MazzardSoftH-Italic.otf');
+	font-style: italic;
+ }
+/* Підключення шрифтів */
+
+/* Вимикаємо скролбар */
+ ::-webkit-scrollbar {
+	width: 0px;
+	background: transparent;
+}
+/* Вимикаємо скролбар */
+
+/* Забираємо відступи у body */
+	body{
+			margin: 0;
+			padding: 0;
+			font-family: 'Mazzard Soft H';
+	}
+/* Забираємо відступи у body */
+
+/* Забираємо відступи у заголовків і абзаців */
+h1,h2,h3,h4,h5,h6, p
+{
+		padding: 0;
+		margin: 0;
+}
+/* Забираємо відступи у заголовків і абзаців */
+
+/*Нормальний розрахунок ширини і висоти елементів */
+	*,
+	*:before,
+	*:after{
+			box-sizing: border-box;
+	}
+/*Нормальний розрахунок ширини і висоти елементів */
+
+
+/* ////////////////////////////////// */
+/* ////////////////////////////////// */
+/* ЛОАДЕР ПОЧАТОК */
+/* ЛОАДЕР, задаємо параметри сторінці лоадера */
+	.mask {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background-image: url('img/background/mask-background.jpg');
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		top: 0;
+		z-index: 5;
+
+	}
+/* ЛОАДЕР, задаємо параметри сторінці лоадера */
+
+/* Вирівнюємо внутрні елементи лоадера */
+	.loader {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+/* Вирівнюємо внутрні елементи лоадера */
+
+/* Задаємо параметри картинці лоадера, і анімації його */
+	.imgLoader {
+		width: 125px;
+		-webkit-animation: scale 2s linear infinite; /* Safari */
+    animation: scale 2s linear infinite;
+	}
+/* Задаємо параметри картинці лоадера, і анімації його */
+
+/* Анімація картинки */
+	@-webkit-keyframes scale {
+		0% { -webkit-transform:scale(1);  }
+	  25% { -webkit-transform:scale(0.75); }
+	  50% { -webkit-transform:scale(0.60); }
+		75% { -webkit-transform: scale(0.75);}
+	  100% { -webkit-transform: scale(1); }
+}
+/* Анімація картинки */
+
+/* Задаємо параметри тексту лоадера */
+	.textLoader{
+		font-size: 32px;
+		font-weight: 300;
+		background: linear-gradient(330deg, #e05252 0%, #bf8c26 25%, #174646 50%, #9952e0 75%, #e05252 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+/* Задаємо параметри тексту лоадера */
+	
+/* Анімація зменьшення картинки */
+  @-webkit-keyframes spin {
+	0% { -webkit-transform:scale(1);  }
+	25% { -webkit-transform:scale(0.75); }
+	50% { -webkit-transform:scale(0.60); }
+	75% { -webkit-transform: scale(0.75);}
+	100% { -webkit-transform: scale(1); }
+}
+/* Анімація зменьшення картинки */
+/* ЛОАДЕР КІНЕЦЬ */
+/* ////////////////////////////////// */
+/* ////////////////////////////////// */
+
+
+/* ////////////////////////////////// */
+/* ////////////////////////////////// */
+/* ОСНОВНА СТОРІНКА ПОЧАТОК */
+/* КОНТЕЙНЕР МЕЙН */
+.container-main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100vh;
+	background-image: url(/img/background/main-bacground.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/* КОНТЕЙНЕР МЕЙН */
+
+/* ОПИСУЄМО ПАРАМЕТРИ ДЛЯ КОНТЕЙНЕРА ЛОГО */
+.logo {
+	display: flex;
+	justify-content: center;
+	
+	/* margin-top: 88px; */
+	margin-bottom: 71px;
+}
+/* ОПИСУЄМО ПАРАМЕТРИ ДЛЯ КОНТЕЙНЕРА ЛОГО */
+
+/* ЗАДАЄМО РОЗМІРИ КАРТИНЦІ */
+.logo-main{
+	width: 70px;
+}
+/* ЗАДАЄМО РОЗМІРИ КАРТИНЦІ */
+
+/* ПАРАМЕТРИ КОНТЕЙНЕРА НАВІГАЦІЇ */
+.navigation {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 71px;
+}
+/* ПАРАМЕТРИ КОНТЕЙНЕРА НАВІГАЦІЇ */
+
+/* ПАРАМЕТРИ ПРИ ФІКСАЦІЇ НАВІГАЦІЇ */
+.navigation.fixed {
+display: flex;
+justify-content: center;
+align-items: center;
+position:fixed;
+margin-top: 0px;
+background-color: #8602E8;
+left: 0;
+top: 0;
+width: 100%;
+height: 40px;
+z-index: 1000;
+
+}
+/* ПАРАМЕТРИ ПРИ ФІКСАЦІЇ НАВІГАЦІЇ */
+
+/* ПАРАМЕТРИ ПРИ ФІКСАЦІЇ НАВІГАЦІЇ ПРИ КЛАСІ АКТИВ */
+.navigation.fixed .active{
+	font-weight: 400;
+}
+/* ПАРАМЕТРИ ПРИ ФІКСАЦІЇ НАВІГАЦІЇ ПРИ КЛАСІ АКТИВ */
+
+
+
+/* ВНУТРІШНІЙ КОНТЕЙНЕР НАВІГАЦІЇ */
+.links {
+
+
+}
+/* ВНУТРІШНІЙ КОНТЕЙНЕР НАВІГАЦІЇ */
+
+/* ЗАДАЄМО ПАРАМЕТРИ ДЛЯ НАШИХ СИЛОК */
+.a__links {
+text-decoration: none;
+color: white;
+text-transform: uppercase;
+font-weight: 200;
+margin-right: 30px;
+font-size: 18px;
+opacity: 1;
+}
+/* ЗАДАЄМО ПАРАМЕТРИ ДЛЯ НАШИХ ПОСИЛАННЬ */
+
+/* ЗАБИРАЄМО ВІДСТУП У ОСТАННЬОГО ЕЛЕМЕНТА */
+.a__links:last-child{
+	margin-right: 0px;
+}
+/* ЗАБИРАЄМО ВІДСТУП У ОСТАННЬОГО ЕЛЕМЕНТА */
+
+/* ЗАДАЄМО ПАРАМЕТРИ, КОЛИ ПОСИЛАННЯ АКТИВНА */
+.active {
+	border-bottom: 3px solid #8602E8;
+	font-weight: 300;
+}
+/* ЗАДАЄМО ПАРАМЕТРИ, КОЛИ ПОСИЛАННЯ АКТИВНА */
+
+/* ЗАДАЄМО ПАРАМЕТРИ ДЛЯ ЦЕНТРАЛЬНОГО БЛОКУ МЕЙНУ */
+.main-info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 1000px;
+	flex-direction: row;
+}
+/* ЗАДАЄМО ПАРАМЕТРИ ДЛЯ ЦЕНТРАЛЬНОГО БЛОКУ МЕЙНУ */
+
+/* ЗАДАЄМО ПАРАМЕТРИ ДЛЯ ВНУТРІШНЬОГО БЛОКУ ІЗ ТЕКСТОМ */
+.main-text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	color: white;
+	font-weight:300;
+	font-size: 20px;
+}
+
+
+/* ЗАДАЄМО ПАРАМЕТРИ ДЛЯ ВНУТРІШНЬОГО БЛОКУ ІЗ ТЕКСТОМ */
+
+/* ЗАДАЄМО ПАРАМЕТРИ ДЛЯ ВНУТРІШНЬОГО БЛОКУ ІЗ КАРТИНКОЮ */
+.main-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 50%;
+}
+/* ЗАДАЄМО ПАРАМЕТРИ ДЛЯ ВНУТРІШНЬОГО БЛОКУ ІЗ КАРТИНКОЮ */
+
+/* ПАРАМЕТРИ ВЕРХНЬОЇ КАРТИНКИ (АЙФОН) */
+.img-iphone {
+	width: 130px;
+	margin-bottom: 55px;
+	-webkit-animation: spin1 2s linear infinite; /* Safari */
+  animation: rotate 5s linear infinite;
+}
+/* ПАРАМЕТРИ ВЕРХНЬОЇ КАРТИНКИ (АЙФОН) */
+
+/* ПАРАМЕТРИ ВЕРХНЬОЇ КАРТИНКИ (АЙФОН) ПРИ НАВЕДИННІ */
+.img-iphone:hover{
+	animation:scale-img 2s linear forwards;
+ }
+ /* ПАРАМЕТРИ ВЕРХНЬОЇ КАРТИНКИ (АЙФОН) ПРИ НАВЕДИННІ */
+
+ /* ПАРАМЕТРИ СЕРЕДНЬОЇ КАРТИНКИ (АЙПАД) */
+.img-ipad {
+	width: 111px;
+	margin-bottom: 55px;
+	-webkit-animation: spin1 2s linear infinite; /* Safari */
+  animation: skewX-img 5s linear infinite;
+
+}
+/* ПАРАМЕТРИ СЕРЕДНЬОЇ КАРТИНКИ (АЙПАД) */
+
+/* ПАРАМЕТРИ СЕРЕДНЬОЇ КАРТИНКИ (АЙПАД) ПРИ НАВЕДИННІ */
+.img-ipad:hover{
+		animation:scale-img 7s linear forwards;
+}
+/* ПАРАМЕТРИ СЕРЕДНЬОЇ КАРТИНКИ (АЙПАД) ПРИ НАВЕДИННІ */
+
+/* ПАРАМЕТРИ НИЖНЬОЇ КАРТИНКИ (МАКБУК)  */
+.img-macbook {
+	width: 279px;
+	-webkit-animation: spin1 2s linear infinite; /* Safari */
+  animation: translate-img 5s linear infinite;
+}
+/* ПАРАМЕТРИ НИЖНЬОЇ КАРТИНКИ (МАКБУК)  */
+
+/* ПАРАМЕТРИ НИЖНЬОЇ КАРТИНКИ (МАКБУК) ПРИ НАВЕДИННІ  */
+.img-macbook:hover{
+	animation:scale-img 7s linear forwards;
+ }
+/* ПАРАМЕТРИ НИЖНЬОЇ КАРТИНКИ (МАКБУК) ПРИ НАВЕДИННІ  */
+
+/* АНІМАЦІЯ РОТЕЙТУ */
+@-webkit-keyframes rotate {
+	0% { -webkit-transform: rotate(10deg);  }
+	25% { -webkit-transform: rotate(-10deg); }
+	50% { -webkit-transform:rotate(10deg); }
+	75% { -webkit-transform:rotate(-10deg) ;}
+	100% { -webkit-transform:rotate(10deg) ; }
+}
+/* АНІМАЦІЯ РОТЕЙТУ */
+
+/* АНІМАЦІЯ ЗБІЛЬШЕННЯ */
+@-webkit-keyframes scale-img {
+	0% { -webkit-transform:scale(1);  }
+	25% { -webkit-transform:scale(1.15); }
+	50% { -webkit-transform:rotate(1.30); }
+	75% { -webkit-transform:rotate(1.40) ;}
+	100% { -webkit-transform:scale(1.45); }
+}
+/* АНІМАЦІЯ ЗБІЛЬШЕННЯ */
+
+/* АНІМАЦІЯ РУКУ ВЛІВО І ВПРАВО */
+@-webkit-keyframes translate-img {
+	0% { -webkit-transform:translate(0px);  }
+	25% { -webkit-transform:translate(30px); }
+	50% { -webkit-transform:translate(0px); }
+	75% { -webkit-transform:translate(-30px) ;}
+	100% { -webkit-transform:translate(0px); }
+}
+/* АНІМАЦІЯ РУКУ ВЛІВО І ВПРАВО */
+
+/* АНІМАЦІЯ ВИВОРОТУ  */
+@-webkit-keyframes skewX-img {
+	0% { -webkit-transform:skewX(7deg);  }
+	25% { -webkit-transform:skewX(0deg); }
+	50% { -webkit-transform:skewX(7deg); }
+	75% { -webkit-transform:skewX(0deg) ;}
+	100% { -webkit-transform:skewX(7deg); }
+}
+/* АНІМАЦІЯ ВИВОРОТУ  */
+/* ОСНОВНА СТОРІНКА КІНЕЦЬ */
+/* ////////////////////////////////// */
+/* ////////////////////////////////// */
+
+/* ////////////////////////////////// */
+/* ////////////////////////////////// */
+/*ПОЧАТОК КОНТЕЙРНЕРА ФОРМА  */
+/* ПАРАМЕТРИ КОНТЕЙНЕРА ФОРМИ */
+.container-forma{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+	background-image: url(/img/background/forma-bacground.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+/* ПАРАМЕТРИ КОНТЕЙНЕРА ФОРМИ */
+
+ /* ЗОВНІШНІЙ КОНТЕЙНЕР ФОРМА  */
+.forma {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+ /* ЗОВНІШНІЙ КОНТЕЙНЕР ФОРМА  */
+
+ /* ЗАГОЛОВОК ФОРМИ */
+.tex-forma {
+	color: white;
+	font-size: 36px;
+	font-weight: 400;
+	margin-bottom: 36px;
+}
+ /* ЗАГОЛОВОК ФОРМИ */
+
+ /* ОСНОВНА ФОРМА */
+.main-form{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 1000px;
+}
+ /* ОСНОВНА ФОРМА */
+
+ /* ПАРАМЕТРИ ФОРМИ ІМ'Я */
+.name-form {
+	width: 240px;
+	height: 42px;
+	padding: 0px 10px;
+	border: none;
+}
+ /* ПАРАМЕТРИ ФОРМИ ІМ'Я */
+
+ /* ПАРАМЕТРИ ФОРМИ ПОШТИ */
+.email-form {
+	width: 206px;
+	height: 42px;
+	margin-left: 60px;
+	margin-right: 60px;
+	padding: 0px 10px;
+	border: none;
+}
+ /* ПАРАМЕТРИ ФОРМИ ПОШТИ */
+
+ /* ПАРАМЕТРИ ФОРМИ ТЕЛЕФОН */
+.phone-form {
+	width: 206px;
+	height: 42px;
+	padding: 0px 10px;
+	border: none;
+}
+ /* ПАРАМЕТРИ ФОРМИ ТЕЛЕФОН */
+
+/* .description-form {
+	margin-top: 36px;
+	width: 430px;
+	height: 175px;
+	padding: 0px 10px;
+	border: none;
+	resize: none;
+} */
+
+/* ПАРАМЕТРИ ФОРМИ ОПИС ПРОБЛЕМИ */
+textarea {
+  width: 430px;
+  height: 175px;
+  padding: 10px 10px;
+	margin: 36px 0px;
+  background-color: #f8f8f8;
+  resize: none;
+	font-size: 14px;
+}
+ /* ПАРАМЕТРИ ФОРМИ ОПИС ПРОБЛЕМИ */
+
+/* ПАРАМЕТРИ КНОПКИ ВІДПРАВКИ */
+.button-form {
+	width: 132px;
+	height: 34px;
+	font-size: 14px;
+	font-weight: 300;
+	background-color: #8602E8;
+	color: white;
+	cursor: pointer;
+	border: NONE;
+}
+/* ПАРАМЕТРИ КНОПКИ ВІДПРАВКИ */
+/*КІНЕЦЬ КОНТЕЙРНЕРА ФОРМА  */
+/* ////////////////////////////////// */
+/* ////////////////////////////////// */
+
+
+/* ////////////////////////////////// */
+/* ////////////////////////////////// */
+/* ПОЧАТОК КОНТЕЙНЕРА КОМАНДИ */
+/* КОНТЕЙНЕР КОМАНДИ */
+.contaire-team {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+	background-image: url(/img/background/team-bacground.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 133px 430px;
+}
+/* КОНТЕЙНЕР КОМАНДИ */
+
+/* ВНУТРІШНІЙ КОНТЕЙНЕР КОМАНДИ */
+.team {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+	width: 100%;
+	height: 100%;
+}
+/* ВНУТРІШНІЙ КОНТЕЙНЕР КОМАНДИ */
+
+/* КОНТЕЙНЕР ПЕРСОНАЛУ */
+.person {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 33.333%;
+}
+/* КОНТЕЙНЕР ПЕРСОНАЛУ */
+
+/* ФОТО ПЕРШОЇ ЛЮДИНИ */
+.img-person1 {
+	width: 243px;
+	height: 243px;
+	border-radius: 50%;
+	background-image: url(/img/team/yura.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+/* ФОТО ПЕРШОЇ ЛЮДИНИ */
+
+/* ФОТО ДРУГОЇ ЛЮДИНИ */
+.img-person2 {
+	width: 243px;
+	height: 243px;
+	border-radius: 50%;
+	background-image: url(/img/team/dima.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+/* ФОТО ДРУГОЇ ЛЮДИНИ */
+
+/* ФОТО ТЕРТЬОЇ ЛЮДИНИ */
+.img-person3 {
+	width: 243px;
+	height: 243px;
+	border-radius: 50%;
+	background-image: url(/img/team/ira.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+/* ФОТО ТЕРТЬОЇ ЛЮДИНИ */
+
+/* ФОТО ЧЕТВЕРТОЇ ЛЮДИНИ */
+.img-person4 {
+	width: 243px;
+	height: 243px;
+	border-radius: 50%;
+	background-image: url(/img/team/marta.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+/* ФОТО ТЕРТЬОЇ ЛЮДИНИ */
+
+/* ФОТО П'ЯТОЇ ЛЮДИНИ */
+.img-person5 {
+	width: 243px;
+	height: 243px;
+	border-radius: 50%;
+	background-image: url(/img/team/valya.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+/* ФОТО П'ЯТОЇ ЛЮДИНИ */
+
+/* ФОТО ШОСТОЇ ЛЮДИНИ */
+.img-person6 {
+	width: 243px;
+	height: 243px;
+	border-radius: 50%;
+	background-image: url(/img/team/sveta.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+/* ФОТО ШОСТОЇ ЛЮДИНИ */
+
+/* ПІБ ЛЮДИНИ */
+.name-person {
+	margin-top: 13px;
+	color: white;
+	font-weight: 300;
+	font-size: 24px;
+}
+/* ПІБ ЛЮДИНИ */
+
+/*ПОСАДА ЛЮДИНИ */
+.job-title {
+	color: #fdd610;
+	font-weight: 400;
+	font-size: 24px;
+}
+/*ПОСАДА ЛЮДИНИ */
+/* ////////////////////////////////// */
+/* ////////////////////////////////// */
+/* КІНЕЦЬ КОНТЕЙНЕРА КОМАНДИ */
+
+
+/* ////////////////////////////////// */
+/* ////////////////////////////////// */
+/* ПОЧАТОК ОКНТЕЙНЕРА ФУТЕРА */
+/* ОСНОВНИЙ КОНТЕЙНЕР ФУТЕРА */
+.container-maps {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 100vh;
+	width: 100%;
+	background-image: url(/img/background/contacts-background.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+/* ОСНОВНИЙ КОНТЕЙНЕР ФУТЕРА */
+
+/* КОНТЕЙНЕР КАРТИ */
+.maps {
+}
+/* КОНТЕЙНЕР КАРТИ */
+
+/* НАЛАШТУВАННЯ СТИЛІВ ВІДОБРАЖЕНЕНЯ КАРТИ */
+.google-maps{
+	width: 1700px;
+	height: 800px;
+}
+/* НАЛАШТУВАННЯ СТИЛІВ ВІДОБРАЖЕНЕНЯ КАРТИ */
+
+/* ЗАДАННЯ ПОЗИЦІЙ КОНТАКТНІЙ ІНФО */
+.footer {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 60px;
+	background-color: #8602E8;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+}
+/* ЗАДАННЯ ПОЗИЦІЙ КОНТАКТНІЙ ІНФО */
+
+/* ТЕКСТ ФУТЕРА */
+.footer-text{
+	color: white;
+	text-align: center;
+	font-weight: 200;
+}
+/* ТЕКСТ ФУТЕРА */
+
+/* ЗАДАННЯ ВІДСТУПІВ ДЛЯ  БЛОКУ ІЗ ТЕЛЕФОНОМ */
+.telefon{
+	margin: 0px 100px;
+}
+/* ЗАДАННЯ ВІДСТУПІВ ДЛЯ  БЛОКУ ІЗ ТЕЛЕФОНОМ */
+/* КІНЕЦЬ ОКНТЕЙНЕРА ФУТЕРА */
+/* ////////////////////////////////// */
+/* ////////////////////////////////// */
