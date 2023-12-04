@@ -398,7 +398,7 @@ opacity: 1;
 	justify-content: center;
 	width: 100%;
 	height: 100vh;
-	background-image: url(/img/background/forma-bacground.png);
+	background-image: url("img/background/forma-bacground.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -511,7 +511,7 @@ textarea {
 	align-items: center;
 	width: 100%;
 	height: 100vh;
-	background-image: url(/img/background/team-bacground.jpg);
+	background-image: url("img/background/team-bacground.jpg");
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -546,7 +546,7 @@ textarea {
 	width: 243px;
 	height: 243px;
 	border-radius: 50%;
-	background-image: url(/img/team/yura.jpg);
+	background-image: url("img/team/yura.jpg");
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -558,7 +558,7 @@ textarea {
 	width: 243px;
 	height: 243px;
 	border-radius: 50%;
-	background-image: url(/img/team/dima.jpg);
+	background-image: url("img/team/dima.jpg");
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -570,7 +570,7 @@ textarea {
 	width: 243px;
 	height: 243px;
 	border-radius: 50%;
-	background-image: url(/img/team/ira.jpg);
+	background-image: url("img/team/ira.jpg");
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -582,7 +582,7 @@ textarea {
 	width: 243px;
 	height: 243px;
 	border-radius: 50%;
-	background-image: url(/img/team/marta.jpg);
+	background-image: url("img/team/marta.jpg");
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -594,7 +594,7 @@ textarea {
 	width: 243px;
 	height: 243px;
 	border-radius: 50%;
-	background-image: url(/img/team/valya.jpg);
+	background-image: url("img/team/valya.jpg");
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -606,7 +606,7 @@ textarea {
 	width: 243px;
 	height: 243px;
 	border-radius: 50%;
-	background-image: url(/img/team/sveta.jpg);
+	background-image: url("img/team/sveta.jpg");
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -646,7 +646,7 @@ textarea {
 	flex-direction: column;
 	height: 100vh;
 	width: 100%;
-	background-image: url(/img/background/contacts-background.jpg);
+	background-image: url("img/background/contacts-background.jpg");
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
