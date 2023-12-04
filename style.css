@@ -106,7 +106,7 @@ h1,h2,h3,h4,h5,h6, p
 		position: fixed;
 		width: 100%;
 		height: 100vh;
-		background-image: url('img/background/mask-background.jpg');
+		background-image: url("img/background/mask-background.jpg");
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -178,7 +178,7 @@ h1,h2,h3,h4,h5,h6, p
 	flex-direction: column;
 	width: 100%;
 	height: 100vh;
-	background-image: url(/img/background/main-bacground.jpg);
+	background-image: url("img/background/main-bacground.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
